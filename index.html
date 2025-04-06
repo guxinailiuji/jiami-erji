@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>加密市场板块分类</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lucide-icon@latest/dist/umd/lucide-icon.min.js" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @keyframes highlight {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        .highlight-blink {
+            animation: highlight 2s ease-in-out infinite;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .section-info {
+            padding: 12px 16px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 0.5rem;
+            margin: 0 16px 16px 16px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div class="container mx-auto px-4 py-6 max-w-7xl">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold tracking-tight mb-2 font-geist-mono">加密市场板块分类 <span class="text-xl text-gray-600">by 不霁何虹</span></h1>
+            <p class="text-gray-600 mt-4">加密市场可分为多个专业板块，每个板块聚焦不同应用场景和价值主张。了解这些板块有助于构建多元化投资组合和把握行业发展趋势。</p>
+        </header>
+
+        <main>
+            <!-- 公链板块 -->
+            <section class="market-section bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">公链 (Layer 1)</h2>
+                    <p>区块链基础架构和平台</p>
+                </div>
+                <div class="section-info">
+                    <p>公链是加密市场的根基，提供底层基础设施，支持去中心化应用开发。作为市值占比最大板块，具有相对稳定增长性。比特币定位价值存储，以太坊则专注智能合约基础设施，而新一代公链如Solana和Avalanche则主打高性能和低费用。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="比特币" class="token-logo">
+                        <div class="token-info">
+                            <h3>比特币 (BTC)</h3>
+                            <p class="text-gray-600">市值: ¥12,049,060,328,392</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">加密货币先驱</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="以太坊" class="token-logo">
+                        <div class="token-info">
+                            <h3>以太坊 (ETH)</h3>
+                            <p class="text-gray-600">市值: ¥1,587,522,179,149</p>
+                            <span class="token-label bg-blue-100 text-blue-800">智能合约平台</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt="币安币" class="token-logo">
+                        <div class="token-info">
+                            <h3>币安币 (BNB)</h3>
+                            <p class="text-gray-600">市值: ¥614,169,186,347</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">交易所生态</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="Solana" class="token-logo">
+                        <div class="token-info">
+                            <h3>Solana (SOL)</h3>
+                            <p class="text-gray-600">市值: ¥449,037,821,341</p>
+                            <span class="token-label bg-purple-100 text-purple-800">高性能公链</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5805.png" alt="Avalanche" class="token-logo">
+                        <div class="token-info">
+                            <h3>Avalanche (AVAX)</h3>
+                            <p class="text-gray-600">市值: ¥112,769,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">高吞吐量</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layer 2 板块 -->
+            <section class="market-section bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">Layer 2</h2>
+                    <p>以太坊扩容解决方案</p>
+                </div>
+                <div class="section-info">
+                    <p>随着以太坊网络拥堵和高昂的Gas费，Layer 2扩容解决方案应运而生。通过将交易处理从主链转移到辅助层，Layer 2能显著提高吞吐量并降低费用。目前主流技术路线包括Rollup技术（Arbitrum、Optimism）、侧链（Polygon）和状态通道。近期L2生态发展迅速，吸引大量用户和开发者。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png" alt="Polygon" class="token-logo">
+                        <div class="token-info">
+                            <h3>Polygon (MATIC)</h3>
+                            <p class="text-gray-600">市值: ¥53,245,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">侧链</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11841.png" alt="Arbitrum" class="token-logo">
+                        <div class="token-info">
+                            <h3>Arbitrum (ARB)</h3>
+                            <p class="text-gray-600">市值: ¥37,862,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">Optimistic Rollup</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11840.png" alt="Optimism" class="token-logo">
+                        <div class="token-info">
+                            <h3>Optimism (OP)</h3>
+                            <p class="text-gray-600">市值: ¥32,149,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">Optimistic Rollup</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/10603.png" alt="Immutable X" class="token-logo">
+                        <div class="token-info">
+                            <h3>Immutable X (IMX)</h3>
+                            <p class="text-gray-600">市值: ¥18,423,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">游戏 NFT L2</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/28615.png" alt="Starknet" class="token-logo">
+                        <div class="token-info">
+                            <h3>Starknet (STRK)</h3>
+                            <p class="text-gray-600">市值: ¥9,583,000,000</p>
+                            <span class="token-label bg-gray-100 text-gray-800">ZK Rollup</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DeFi 板块 -->
+            <section class="market-section bg-gradient-to-r from-green-50 to-teal-50 border border-green-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-green-500 to-teal-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">DeFi (去中心化金融)</h2>
+                    <p>去中心化金融服务和协议</p>
+                </div>
+                <div class="section-info">
+                    <p>DeFi革命性地重构了传统金融体系，创造出无需信任、无需许可的金融产品。包括去中心化交易所（DEX）、借贷平台、衍生品协议等。DeFi生态系统的TVL（总锁仓价值）是衡量其健康度的重要指标。目前主要构建在以太坊上，但也在向多链发展。创新不断，但也伴随着较高风险和波动性。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/uniswap-uni-logo.svg" alt="Uniswap" class="token-logo">
+                        <div class="token-info">
+                            <h3>Uniswap (UNI)</h3>
+                            <p class="text-gray-600">市值: ¥49,872,000,000</p>
+                            <span class="token-label bg-pink-100 text-pink-800">DEX</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/chainlink-link-logo.svg" alt="Chainlink" class="token-logo">
+                        <div class="token-info">
+                            <h3>Chainlink (LINK)</h3>
+                            <p class="text-gray-600">市值: ¥95,214,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">预言机</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/aave-aave-logo.svg" alt="Aave" class="token-logo">
+                        <div class="token-info">
+                            <h3>Aave (AAVE)</h3>
+                            <p class="text-gray-600">市值: ¥16,538,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">借贷协议</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/maker-mkr-logo.svg" alt="Maker" class="token-logo">
+                        <div class="token-info">
+                            <h3>Maker (MKR)</h3>
+                            <p class="text-gray-600">市值: ¥14,982,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">稳定币发行</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/curve-dao-token-crv-logo.svg" alt="Curve" class="token-logo">
+                        <div class="token-info">
+                            <h3>Curve (CRV)</h3>
+                            <p class="text-gray-600">市值: ¥7,321,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">稳定币交易</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 基础设施板块 -->
+            <section class="market-section bg-gradient-to-r from-gray-50 to-gray-100 border border-gray-200 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-gray-600 to-gray-700 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">基础设施</h2>
+                    <p>区块链基础设施和服务</p>
+                </div>
+                <div class="section-info">
+                    <p>基础设施项目为区块链生态提供关键支持服务，如数据索引（The Graph）、存储解决方案（Filecoin、Arweave）和跨链互操作性。这些项目通常不那么引人注目，但对整个生态系统的健康运行至关重要。作为构建其他应用的基础，随着行业成熟度提高，这类项目的重要性将进一步凸显。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/the-graph-grt-logo.svg" alt="The Graph" class="token-logo">
+                        <div class="token-info">
+                            <h3>The Graph (GRT)</h3>
+                            <p class="text-gray-600">市值: ¥12,572,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">数据索引</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/filecoin-fil-logo.svg" alt="Filecoin" class="token-logo">
+                        <div class="token-info">
+                            <h3>Filecoin (FIL)</h3>
+                            <p class="text-gray-600">市值: ¥40,891,000,000</p>
+                            <span class="token-label bg-gray-100 text-gray-800">分布式存储</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/arweave-ar-logo.svg" alt="Arweave" class="token-logo">
+                        <div class="token-info">
+                            <h3>Arweave (AR)</h3>
+                            <p class="text-gray-600">市值: ¥5,820,000,000</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">永久存储</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/16724.png" alt="SSV Network" class="token-logo">
+                        <div class="token-info">
+                            <h3>SSV Network (SSV)</h3>
+                            <p class="text-gray-600">市值: ¥3,104,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">验证器基础设施</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/celestia-tia-logo.svg" alt="Celestia" class="token-logo">
+                        <div class="token-info">
+                            <h3>Celestia (TIA)</h3>
+                            <p class="text-gray-600">市值: ¥28,569,000,000</p>
+                            <span class="token-label bg-indigo-100 text-indigo-800">模块化区块链</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RWA (现实世界资产) 板块 -->
+            <section class="market-section bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-amber-500 to-yellow-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">RWA (现实世界资产)</h2>
+                    <p>现实世界资产代币化</p>
+                </div>
+                <div class="section-info">
+                    <p>RWA代表了加密领域与传统金融世界的桥梁，将房地产、商品、债券等实体资产上链代币化。这一领域有望引入大规模传统资金，提高流动性和可及性。目前处于早期阶段，但机构投资者参与度逐渐提高，被认为是下一个重要增长点。通过实物资产支持，RWA项目通常具有较低波动性。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/synthetix-network-token-snx-logo.svg" alt="Synthetix" class="token-logo">
+                        <div class="token-info">
+                            <h3>Synthetix (SNX)</h3>
+                            <p class="text-gray-600">市值: ¥9,574,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">合成资产</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/centrifuge-cfg-logo.svg" alt="Centrifuge" class="token-logo">
+                        <div class="token-info">
+                            <h3>Centrifuge (CFG)</h3>
+                            <p class="text-gray-600">市值: ¥2,459,000,000</p>
+                            <span class="token-label bg-gray-100 text-gray-800">资产代币化</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/8525.png" alt="Maple Finance" class="token-logo">
+                        <div class="token-info">
+                            <h3>Maple Finance (MPL)</h3>
+                            <p class="text-gray-600">市值: ¥1,853,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">机构借贷</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/ondo-finance-ondo-logo.svg" alt="Ondo Finance" class="token-logo">
+                        <div class="token-info">
+                            <h3>Ondo Finance (ONDO)</h3>
+                            <p class="text-gray-600">市值: ¥1,624,000,000</p>
+                            <span class="token-label bg-amber-100 text-amber-800">资产管理</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/ren-ren-logo.svg" alt="REN" class="token-logo">
+                        <div class="token-info">
+                            <h3>REN (REN)</h3>
+                            <p class="text-gray-600">市值: ¥1,382,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">跨链资产</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏板块 -->
+            <section class="market-section bg-gradient-to-r from-red-50 to-orange-50 border border-red-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-red-500 to-orange-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">GameFi (游戏金融)</h2>
+                    <p>区块链游戏与游戏金融</p>
+                </div>
+                <div class="section-info">
+                    <p>GameFi结合了游戏与金融元素，通过"玩赚"(Play-to-Earn)模式重新定义游戏经济。基于区块链的游戏资产具有真正所有权，可在游戏外交易。该领域经历过爆发式增长（如Axie Infinity的成功）和调整期，但随着游戏质量提升和大型游戏公司入局，GameFi有望进入良性发展阶段。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/18876.png" alt="ApeCoin" class="token-logo">
+                        <div class="token-info">
+                            <h3>ApeCoin (APE)</h3>
+                            <p class="text-gray-600">市值: ¥7,421,000,000</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">游戏生态</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/decentraland-mana-logo.svg" alt="Decentraland" class="token-logo">
+                        <div class="token-info">
+                            <h3>Decentraland (MANA)</h3>
+                            <p class="text-gray-600">市值: ¥5,823,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">元宇宙</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/the-sandbox-sand-logo.svg" alt="The Sandbox" class="token-logo">
+                        <div class="token-info">
+                            <h3>The Sandbox (SAND)</h3>
+                            <p class="text-gray-600">市值: ¥5,129,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">元宇宙游戏</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/axie-infinity-axs-logo.svg" alt="Axie Infinity" class="token-logo">
+                        <div class="token-info">
+                            <h3>Axie Infinity (AXS)</h3>
+                            <p class="text-gray-600">市值: ¥4,872,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">NFT游戏</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/gala-gala-logo.svg" alt="Gala" class="token-logo">
+                        <div class="token-info">
+                            <h3>Gala (GALA)</h3>
+                            <p class="text-gray-600">市值: ¥3,921,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">游戏平台</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 社交板块 -->
+            <section class="market-section bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">社交</h2>
+                    <p>去中心化社交平台</p>
+                </div>
+                <div class="section-info">
+                    <p>Web3社交探索去中心化社交媒体新范式，用户拥有自己的数据和内容所有权。从Telegram整合（TON）到分布式身份和去中心化社交网络，该领域正尝试解决当前社交平台的数据隐私、审查和收益分配问题。发展仍处初期，但用户获取和留存是关键指标。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/toncoin-ton-logo.svg" alt="Toncoin" class="token-logo">
+                        <div class="token-info">
+                            <h3>Toncoin (TON)</h3>
+                            <p class="text-gray-600">市值: ¥120,482,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">Telegram生态</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/internet-computer-icp-logo.svg" alt="Internet Computer" class="token-logo">
+                        <div class="token-info">
+                            <h3>Internet Computer (ICP)</h3>
+                            <p class="text-gray-600">市值: ¥49,273,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">去中心化互联网</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/chiliz-chz-logo.svg" alt="Chiliz" class="token-logo">
+                        <div class="token-info">
+                            <h3>Chiliz (CHZ)</h3>
+                            <p class="text-gray-600">市值: ¥8,924,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">体育粉丝社交</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/status-snt-logo.svg" alt="Status" class="token-logo">
+                        <div class="token-info">
+                            <h3>Status (SNT)</h3>
+                            <p class="text-gray-600">市值: ¥1,249,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">去中心化通讯</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/mask-network-mask-logo.svg" alt="Mask Network" class="token-logo">
+                        <div class="token-info">
+                            <h3>Mask Network (MASK)</h3>
+                            <p class="text-gray-600">市值: ¥3,124,000,000</p>
+                            <span class="token-label bg-indigo-100 text-indigo-800">社交隐私</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI板块 -->
+            <section class="market-section bg-gradient-to-r from-violet-50 to-purple-50 border border-violet-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-violet-500 to-purple-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">AI (人工智能)</h2>
+                    <p>区块链与人工智能融合</p>
+                </div>
+                <div class="section-info">
+                    <p>AI与区块链的结合是近期热门趋势，探索分布式计算资源共享（如Render Network）和去中心化AI服务市场。这一领域融合了两种前沿技术，旨在解决AI中心化的算力和数据控制问题。随着大模型发展，分布式AI基础设施需求可能增长，但项目真实落地应用是判断价值的关键。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5690.png" alt="Render Token" class="token-logo">
+                        <div class="token-info">
+                            <h3>Render Token (RNDR)</h3>
+                            <p class="text-gray-600">市值: ¥32,419,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">分布式渲染</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/singularitynet-agix-logo.svg" alt="SingularityNET" class="token-logo">
+                        <div class="token-info">
+                            <h3>SingularityNET (AGIX)</h3>
+                            <p class="text-gray-600">市值: ¥6,872,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">AI服务市场</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/fetch-ai-fet-logo.svg" alt="Fetch.ai" class="token-logo">
+                        <div class="token-info">
+                            <h3>Fetch.ai (FET)</h3>
+                            <p class="text-gray-600">市值: ¥5,821,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">AI经济</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/ocean-protocol-ocean-logo.svg" alt="Ocean Protocol" class="token-logo">
+                        <div class="token-info">
+                            <h3>Ocean Protocol (OCEAN)</h3>
+                            <p class="text-gray-600">市值: ¥1,893,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">数据经济</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/bittensor-tao-logo.svg" alt="Bittensor" class="token-logo">
+                        <div class="token-info">
+                            <h3>Bittensor (TAO)</h3>
+                            <p class="text-gray-600">市值: ¥14,829,000,000</p>
+                            <span class="token-label bg-indigo-100 text-indigo-800">去中心化AI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 稳定币板块 -->
+            <section class="market-section bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-emerald-500 to-teal-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">稳定币</h2>
+                    <p>价格稳定的加密货币</p>
+                </div>
+                <div class="section-info">
+                    <p>稳定币作为加密世界的"货币基础"，为整个生态系统提供价值稳定的交易媒介。目前主要分为法币支持型（USDT、USDC）、超额抵押型（DAI）和算法型。稳定币市值增长反映了整体行业规模，也是法币通往加密世界的主要入口。监管态度将显著影响稳定币未来发展路径。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/tether-usdt-logo.svg" alt="Tether" class="token-logo">
+                        <div class="token-info">
+                            <h3>Tether (USDT)</h3>
+                            <p class="text-gray-600">市值: ¥1,051,082,727,368</p>
+                            <span class="token-label bg-blue-100 text-blue-800">法币支持</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/usd-coin-usdc-logo.svg" alt="USD Coin" class="token-logo">
+                        <div class="token-info">
+                            <h3>USD Coin (USDC)</h3>
+                            <p class="text-gray-600">市值: ¥441,678,686,290</p>
+                            <span class="token-label bg-green-100 text-green-800">法币支持</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/dai-dai-logo.svg" alt="Dai" class="token-logo">
+                        <div class="token-info">
+                            <h3>Dai (DAI)</h3>
+                            <p class="text-gray-600">市值: ¥37,921,000,000</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">去中心化</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/frax-frax-logo.svg" alt="Frax" class="token-logo">
+                        <div class="token-info">
+                            <h3>Frax (FRAX)</h3>
+                            <p class="text-gray-600">市值: ¥6,582,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">部分算法</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/trueusd-tusd-logo.svg" alt="TrueUSD" class="token-logo">
+                        <div class="token-info">
+                            <h3>TrueUSD (TUSD)</h3>
+                            <p class="text-gray-600">市值: ¥17,293,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">法币支持</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MEME币板块 -->
+            <section class="market-section bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-pink-500 to-rose-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">MEME币</h2>
+                    <p>以社区和模因文化为驱动的加密货币</p>
+                </div>
+                <div class="section-info">
+                    <p>MEME币由社区文化和互联网梗驱动，虽然通常缺乏实际应用，但展现了加密货币作为社会现象的一面。从最早的狗狗币到各种动物币，MEME币往往伴随极高波动性和投机性质。尽管常被视为市场泡沫象征，一些项目（如DOGE）已演变出持久的社区和生态，成为加密文化的独特组成部分。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/dogecoin-doge-logo.svg" alt="Dogecoin" class="token-logo">
+                        <div class="token-info">
+                            <h3>Dogecoin (DOGE)</h3>
+                            <p class="text-gray-600">市值: ¥181,687,001,428</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">原始模因币</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.svg" alt="Shiba Inu" class="token-logo">
+                        <div class="token-info">
+                            <h3>Shiba Inu (SHIB)</h3>
+                            <p class="text-gray-600">市值: ¥16,498,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">狗狗币生态</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/pepe-pepe-logo.svg" alt="Pepe" class="token-logo">
+                        <div class="token-info">
+                            <h3>Pepe (PEPE)</h3>
+                            <p class="text-gray-600">市值: ¥5,972,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">青蛙模因</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/14495.png" alt="Floki" class="token-logo">
+                        <div class="token-info">
+                            <h3>Floki (FLOKI)</h3>
+                            <p class="text-gray-600">市值: ¥2,863,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">社区代币</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/16308.png" alt="Bonk" class="token-logo">
+                        <div class="token-info">
+                            <h3>Bonk (BONK)</h3>
+                            <p class="text-gray-600">市值: ¥1,479,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">Solana生态模因</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NFT板块 -->
+            <section class="market-section bg-gradient-to-r from-fuchsia-50 to-pink-50 border border-fuchsia-100 rounded-lg mb-8">
+                <div class="section-header bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white">
+                    <h2 class="text-xl font-bold highlight-blink">NFT与元宇宙</h2>
+                    <p>非同质化代币与虚拟世界</p>
+                </div>
+                <div class="section-info">
+                    <p>NFT将数字资产所有权带入区块链，应用从数字艺术到虚拟房地产、游戏物品和身份验证。经历2021-2022年爆发和回调后，行业正向实用性和品牌整合方向发展。元宇宙概念则构想互联、沉浸式的虚拟世界，两者结合为数字资产和虚拟经济创造无限可能性。</p>
+                </div>
+                <div class="token-grid">
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/flow-flow-logo.svg" alt="Flow" class="token-logo">
+                        <div class="token-info">
+                            <h3>Flow (FLOW)</h3>
+                            <p class="text-gray-600">市值: ¥6,923,000,000</p>
+                            <span class="token-label bg-blue-100 text-blue-800">NFT平台</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/enjin-coin-enj-logo.svg" alt="Enjin Coin" class="token-logo">
+                        <div class="token-info">
+                            <h3>Enjin Coin (ENJ)</h3>
+                            <p class="text-gray-600">市值: ¥2,835,000,000</p>
+                            <span class="token-label bg-purple-100 text-purple-800">游戏资产</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/theta-network-theta-logo.svg" alt="Theta Network" class="token-logo">
+                        <div class="token-info">
+                            <h3>Theta Network (THETA)</h3>
+                            <p class="text-gray-600">市值: ¥7,582,000,000</p>
+                            <span class="token-label bg-red-100 text-red-800">视频流媒体</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/18069.png" alt="STEPN" class="token-logo">
+                        <div class="token-info">
+                            <h3>STEPN (GMT)</h3>
+                            <p class="text-gray-600">市值: ¥2,491,000,000</p>
+                            <span class="token-label bg-green-100 text-green-800">移动赚取</span>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <img src="https://cryptologos.cc/logos/rarible-rari-logo.svg" alt="Rarible" class="token-logo">
+                        <div class="token-info">
+                            <h3>Rarible (RARI)</h3>
+                            <p class="text-gray-600">市值: ¥472,000,000</p>
+                            <span class="token-label bg-yellow-100 text-yellow-800">NFT市场</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 mb-6 text-gray-600 text-sm">
+            <p>加密市场数据仅供参考，实际价格可能随时变动</p>
+            <p class="mt-4">
+                反关财经 <a href="https://flowith.net" target="_blank" class="text-gray-800 hover:underline">by 不霁何虹</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script src="market-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("wheel", (e)=> {
+          const isPinching = e.ctrlKey
+          if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+</body>
+</html>
